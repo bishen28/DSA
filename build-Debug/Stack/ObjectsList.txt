@@ -1,1 +1,0 @@
-../build-Debug/Stack/StackA.cpp.o ../build-Debug/Stack/main.cpp.o   
