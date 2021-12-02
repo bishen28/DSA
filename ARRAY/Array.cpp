@@ -22,7 +22,7 @@ Array::Array(Array &source){  // copy constructor
            temp[i] = source.A[i];
     }
     //delete []A;
-    A = temp;
+    this->A = temp;
     temp = nullptr;
 
 }
