@@ -40,11 +40,10 @@ Array& Array::operator=(const Array& sourse){ // Assignment operator
 void Array::feed(){
   std ::cin >> length;
   std ::cin >> size;
-  this->length = lenght;
   this->size   = size;
   for(int i=0;i<length;i++){ 
     int num; cin>>num;
-    this.Append(num);
+    this->Append(num);
   } 
 }
 
