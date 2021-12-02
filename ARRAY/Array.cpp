@@ -28,18 +28,15 @@ Array::Array(Array &source){  // copy constructor
 }
 // Assignment operator
 Array& Array::operator=(const Array& sourse){
-    
     this->length = sourse.length;
     this->size = sourse.size;
     int  *temp = new int [size];
     for(int i = 0; i < length; i++){
-           temp[i] = A[i];
+           temp[i] = sourse.A[i];
     }
-    delete []A;
     this->A = temp;
     temp = nullptr;
-    
-    return *this;
+    return *this;          // this is a way 
 }
 void Array::feed(){std ::cin >> length;std ::cin >> size;
 for(int i=0;i<length;i++){ std::cin >> A[i];} }
