@@ -5,6 +5,8 @@ int inTime[10000];
 int outTime[10000];
 int inT = 0, outT = 0;
 
+// this is a comment
+
 void DFS(int s,vector<vector<int>> &adj_list,vector<bool> &visited){
        visited[s] = true;
        inTime[s] = inT++;
